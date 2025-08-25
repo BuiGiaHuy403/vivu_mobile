@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:vivu_mobile/core/routes/app_routes.dart';
+import 'core/di/service_locator.dart';
+
+import 'core/routes/app_router.dart';
 
 void main() {
+  setup();
   runApp(const MyApp());
 }
 
@@ -15,7 +20,8 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Container(),
+      initialRoute: AppRoutes.login,
+      onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
 }
