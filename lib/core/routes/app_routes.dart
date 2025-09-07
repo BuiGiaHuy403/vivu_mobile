@@ -1,6 +1,8 @@
 
 class AppRoutes{
   //Authentication
+  static const splashScreen = "splash_screen";
+
   static const login = "/";
 
   static const signup = "sign-up";

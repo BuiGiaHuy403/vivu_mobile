@@ -5,6 +5,7 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+
 android {
     namespace = "com.example.vivu_mobile"
     compileSdk = flutter.compileSdkVersion
@@ -43,4 +44,9 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // This brings in AndroidX splash screen API for Android 12+
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
