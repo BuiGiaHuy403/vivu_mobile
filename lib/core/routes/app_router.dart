@@ -4,9 +4,11 @@ import 'package:vivu_mobile/core/common/widget/splash_screen/splash_screen.dart'
 import 'package:vivu_mobile/feature/auth/presentation/login_screen.dart';
 import 'package:vivu_mobile/feature/auth/presentation/signup_screen.dart';
 import 'package:vivu_mobile/feature/home/presentation/home_screen.dart';
+import 'package:vivu_mobile/feature/my_trip/presentation/my_trip_detail/my_trip_detail_screen.dart';
+import 'package:vivu_mobile/feature/plan_trip/presentation/planning_screen.dart';
 
 import '../../feature/explore/presentation/explore.dart';
-import '../../feature/my_trip/presentation/my_trip_screen.dart';
+import '../../feature/my_trip/presentation/my_trip_main/my_trip_screen.dart';
 import '../../feature/profile/presentation/profile.dart';
 import '../common/widget/nav_bar/tab_item.dart';
 import 'app_routes.dart';
@@ -16,7 +18,7 @@ class AppRoute {
     switch (settings.name) {
       case AppRoutes.splashScreen:
         return MaterialPageRoute(
-          builder: (_) =>  SplashScreen(),
+          builder: (_) => SplashScreen(),
           settings: settings,
         );
       case AppRoutes.login:
@@ -29,7 +31,6 @@ class AppRoute {
           builder: (_) => const SignupScreen(),
           settings: settings,
         );
-
       //<-- Bottom Bar -->
       case AppRoutes.home:
         return MaterialPageRoute(
@@ -51,7 +52,16 @@ class AppRoute {
           builder: (_) => const BottomBarScreen(initialTab: TabItem.profile),
           settings: settings,
         );
-
+      case AppRoutes.planningScreen:
+        return MaterialPageRoute(
+          builder: (_) => const PlanningScreen(),
+          settings: settings,
+        );
+      case AppRoutes.tripDetailScreen:
+        return MaterialPageRoute(
+          builder: (_) => const MyTripDetailScreen(),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => Container(),

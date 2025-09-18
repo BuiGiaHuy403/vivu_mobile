@@ -36,7 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   dio: ^5.9.0
   flutter_secure_storage: ^9.0.0
-  flutter_dotenv: ^5.1.0   # optional, for seeding from .env
+  flutter_dotenv: ^5.1.0
+  flutter_bloc: ^9.1.1
 
   #DI package
   get_it: ^7.6.4
@@ -64,6 +65,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - .env
     - assets/icons/
     - assets/banners/
 

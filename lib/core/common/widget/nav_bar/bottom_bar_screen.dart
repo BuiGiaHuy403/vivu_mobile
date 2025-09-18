@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vivu_mobile/core/common/constants/app_color.dart';
 import 'package:vivu_mobile/core/common/widget/nav_bar/bottom_navigation.dart';
 import 'package:vivu_mobile/core/common/widget/nav_bar/tab_item.dart';
+import 'package:vivu_mobile/core/routes/app_routes.dart';
 
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({
@@ -60,7 +61,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           gradient: MAIN_LINEAR_FULL, // gradient bạn định nghĩa
         ),
         child: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, AppRoutes.planningScreen);
+          },
           icon: Icon(Icons.add, color: Colors.white, size: 54),
         ),
       ),

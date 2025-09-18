@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:vivu_mobile/feature/explore/presentation/explore.dart';
 import 'package:vivu_mobile/feature/home/presentation/home_screen.dart';
-import 'package:vivu_mobile/feature/my_trip/presentation/my_trip_screen.dart';
+import 'package:vivu_mobile/feature/my_trip/presentation/my_trip_main/my_trip_screen.dart';
 import 'package:vivu_mobile/feature/profile/presentation/profile.dart';
 
 import '../../../routes/app_routes.dart';

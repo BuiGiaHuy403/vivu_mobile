@@ -1,11 +1,11 @@
 
 class AppRoutes{
   //Authentication
-  static const splashScreen = "splash_screen";
+  static const splashScreen = "/splash_screen";
 
   static const login = "/";
 
-  static const signup = "sign-up";
+  static const signup = "/sign-up";
 
   // Main Screen
   static const home = "/home";
@@ -18,5 +18,7 @@ class AppRoutes{
   static const explore = "/explore";
 
   //Flow 1
+  static const planningScreen = "/planning-screen";
 
+  static const tripDetailScreen = "/trip-detail-screen";
 }

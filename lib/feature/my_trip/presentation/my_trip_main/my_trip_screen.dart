@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/common/constants/app_color.dart';
+import '../../../../core/common/constants/app_color.dart';
+import '../../../../core/routes/app_routes.dart';
 
 class MyTripScreen extends StatelessWidget {
   const MyTripScreen({super.key});
@@ -25,7 +26,7 @@ class MyTripScreen extends StatelessWidget {
                 children: [
                   const SizedBox(height: 40), // Space for status bar
                   const Text(
-                    "Lịch trình của tôi",
+                    "Chuyến đi của tôi",
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -76,7 +77,6 @@ class MyTripScreen extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                // Handle past trips
                               },
                               child: const Text(
                                 "Đã đi",
@@ -105,7 +105,6 @@ class MyTripScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     // Trip Cards
                     Expanded(
                       child: ListView.builder(
@@ -211,7 +210,7 @@ class _TripCard extends StatelessWidget {
             child: IconButton(
               icon: const Icon(Icons.info_outline, color: Colors.white),
               onPressed: () {
-                // Handle info action
+                Navigator.pushNamed(context, AppRoutes.tripDetailScreen);
               },
             ),
           ),

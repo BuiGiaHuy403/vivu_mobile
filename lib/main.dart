@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:vivu_mobile/core/routes/app_routes.dart';
 import 'core/di/service_locator.dart';
 
+import 'core/network/api_client.dart';
 import 'core/routes/app_router.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async{
+  await dotenv.load();
   setup();
   runApp(const MyApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
     const MyApp({super.key});

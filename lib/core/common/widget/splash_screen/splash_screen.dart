@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SizedBox.expand( // đảm bảo chiếm toàn bộ màn hình
         child: Image.asset(
           "assets/banners/splash_art.png",
-          fit: BoxFit.cover, // hoặc BoxFit.fill
+          fit: BoxFit.cover,
         ),
       ),
     );

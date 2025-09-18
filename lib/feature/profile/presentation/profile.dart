@@ -29,7 +29,7 @@ class ProfileScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 const CircleAvatar(
                   radius: 70,
-                  backgroundImage: AssetImage('assets/images/default_avatar.png'),
+                  backgroundImage: AssetImage('assets/banners/splash_screen.png'),
                   // TODO: Replace with network image when API is integrated
                 ),
                 const SizedBox(height: 16),
